@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+        form { max-width: 500px; background: white; padding: 15px; border-radius: 8px; }
+        div { margin-bottom: 15px; }
+        label { font-weight: bold; display: block; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>Nova Conta</h1>
+
+    <form action="#">
+        <fieldset>
+            <legend><strong>Crie sua Conta</strong></legend>
+
+            <div>
+                <label for="campo-nome">Nome Completo</label>
+                <input type="text" id="campo-nome" name="nome" placeholder="Digite seu nome aqui...">
+            </div>
+
+            <div>
+                <label for="campo-email">Email</label>
+                <input type="email" id="campo-email" name="email" required placeholder="exemplo@gmail.com">
+            </div>
+
+            <div>
+                <label for="campo-senha">Senha</label>
+                <input type="password" id="campo-senha" name="senha" minlength="8" required>
+                <small>(Mínimo de 8 caracteres)</small>
+            </div>
+
+            <hr>
+
+            <div>
+                <strong>Gênero</strong><br>
+                <input type="radio" id="masc" name="genero" value="Masculino">
+                <label style="display:inline" for="masc">Masculino</label>
+                
+                <input type="radio" id="fem" name="genero" value="Feminino">
+                <label style="display:inline" for="fem">Feminino</label>
+            </div>
+
+            <div>
+                <label for="biografia">Biografia</label>
+                <textarea id="biografia" name="bio" rows="6" placeholder="Fale um pouco sobre você..."></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" id="aceito-termos" name="termos" required>
+                <label style="display:inline" for="aceito-termos">Aceito os termos e condições de uso</label>
+            </div>
+
+            <button type="submit" style="cursor:pointer">Finalizar Cadastro</button>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
