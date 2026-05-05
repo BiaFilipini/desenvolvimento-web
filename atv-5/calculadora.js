@@ -1,4 +1,4 @@
-const valorConta = 120.50; 
+const valorConta = 120.50;   
 const percentualGorjeta = 10; 
 const valorGorjeta = valorConta * (percentualGorjeta / 100);
 const valorTotal = valorConta + valorGorjeta;
